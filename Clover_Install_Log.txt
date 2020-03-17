@@ -1,0 +1,63 @@
+
+Clover EFI installer log - Sun Jan 26 08:46:54 PST 2020
+Installer version: v2.5k r5103 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk0
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                 Apple_APFS Container disk3         499.9 GB   disk1s2
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *240.1 GB   disk2
+   1:         Microsoft Reserved                         16.8 MB    disk2s1
+   2:       Microsoft Basic Data                         240.0 GB   disk2s2
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +499.9 GB   disk3
+                                 Physical Store disk1s2
+   1:                APFS Volume MacintoshHD - Data      160.0 GB   disk3s1
+   2:                APFS Volume Preboot                 84.0 MB    disk3s2
+   3:                APFS Volume Recovery                528.5 MB   disk3s3
+   4:                APFS Volume VM                      1.1 GB     disk3s4
+   5:                APFS Volume MacintoshHD             10.9 GB    disk3s5
+
+/dev/disk4 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk4
+   1:       Microsoft Basic Data Games                   1.0 TB     disk4s1
+
+/dev/disk5 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *2.0 TB     disk5
+   1:                        EFI EFI                     209.7 MB   disk5s1
+   2:       Microsoft Basic Data Ayush's Bkp             2.0 TB     disk5s2
+
+/dev/disk6 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +8.4 GB     disk6
+   1:                        EFI EFI                     209.7 MB   disk6s1
+   2:                  Apple_HFS InstallESD              8.1 GB     disk6s2
+
+Target volume /Volumes/MacintoshHD on disk3 is APFS on physical store disk1s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MacintoshHD/EFIROOTDIR/EFI folder to /Volumes/MacintoshHD/EFI-Backups/r5099/2020-01-26-08h46/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing UEFI/SMCHelper.efi driver because VirtualSMC driver present
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
